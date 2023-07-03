@@ -1,0 +1,21 @@
+<h2>LISTADO DE PRODUCTOS</h2>
+<table class="table table-striped">
+    <thead class="table-success">
+        <tr>
+            <th>idVenta</th>
+            <th>Comision</th>
+            <th>fechaventa</th>
+            <th>idCliente</th>
+            <th>idProducto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let venta of ventas">
+            <td>{{venta.idVenta}}</td>
+            <td>{{venta.comision}}</td>
+            <td>{{venta.fechaventa}}</td>
+            <td>{{venta.idCliente}}</td>
+            <td>{{venta.idProducto}}</td>
+        </tr>
+    </tbody>
+</table>

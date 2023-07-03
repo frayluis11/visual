@@ -1,0 +1,20 @@
+<h2>LISTADO DE EMPLEADO</h2>
+<table class="table table-striped">
+    <thead class="table-success">
+      <tr>
+        <th>ID Compra</th>
+        <th>Fecha Compra</th>
+        <th>ID Cliente</th>
+        <th>ID Producto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let compra of compra">
+        <td>{{ compra.idCompra }}</td>
+        <td>{{ compra.fechacompra }}</td>
+        <td>{{ compra.idCliente }}</td>
+        <td>{{ compra.idProducto }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

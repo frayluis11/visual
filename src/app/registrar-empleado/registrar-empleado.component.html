@@ -1,0 +1,23 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">REGISTRO DE EMPLEADOS</h3>
+    <form (submit)="onSubmit()">
+      <div class="form-group">
+        <label for="codigo">ID</label>
+        <input type="text" class="form-control" name="idempleado" id="idempleado" [(ngModel)]="empleado.idempleado">
+      </div>
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="empleado.nombre">
+      </div>
+      <div class="form-group">
+        <label for="cargo">Cargo</label>
+        <input type="text" class="form-control" name="cargo" id="cargo" [(ngModel)]="empleado.cargo">
+      </div>
+      <div class="form-group">
+        <label for="direccion">Direccion</label>
+        <input type="text" class="form-control" name="direccion" id="direccion" [(ngModel)]="empleado.direccion">
+      </div>
+      <button type="submit" class="btn btn-success">Registrar</button>
+    </form>
+  </div>
+  

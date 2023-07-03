@@ -1,0 +1,32 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">REGISTRO DE VENTAS</h3>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+          <label for="codigo">ID</label>
+          <input type="text" class="form-control" name="idVenta" id="idVenta"
+          [(ngModel)]="venta.idVenta">
+      </div>
+      <div class="form-group">
+          <label for="nombre">Comision</label>
+          <input type="text" class="form-control" name="Comision" id="Comision"
+          [(ngModel)]="venta.comision">
+      </div>
+      <div class="form-group">
+          <label for="direccion">Fecha de venta</label>
+          <input type="text" class="form-control" name="fechaventa" id="fechaventa"
+          [(ngModel)]="venta.fechaventa">
+      </div>
+      <div class="form-group">
+          <label for="celular">idCliente</label>
+          <input type="text" class="form-control" name="idCliente" id="idCliente"
+          [(ngModel)]="venta.idCliente">
+      </div>
+      <div class="form-group">
+        <label for="celular">idProducto</label>
+        <input type="text" class="form-control" name="idProducto" id="idProducto"
+        [(ngModel)]="venta.idProducto">
+    </div>
+      <button class="btn btn-success">Registrar</button>
+    </form>
+  </div>
+  

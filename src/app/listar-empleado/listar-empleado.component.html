@@ -1,0 +1,19 @@
+<h2>LISTADO DE EMPLEADO</h2>
+<table class="table table-striped">
+    <thead class="table-success">
+        <tr>
+            <th>idempleado</th>
+            <th>nombre</th>
+            <th>cargo</th>
+            <th>direccion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let empleado of empleados">
+            <td>{{ empleado.idempleado }}</td>
+            <td>{{ empleado.nombre }}</td>
+            <td>{{ empleado.cargo }}</td>
+            <td>{{ empleado.direccion }}</td>
+        </tr>        
+    </tbody>
+</table>
